@@ -1,3 +1,7 @@
+:root {
+  color: #ffffff;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -6,7 +10,6 @@ body {
 
 h1 {
   font-size: 50px;
-  color: #ffffff;
   text-align: center;
   padding: 25px;
   padding-bottom: 0px;
@@ -14,7 +17,6 @@ h1 {
 
 h2 {
   font-size: 25px;
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   padding-top: 0px;
@@ -41,7 +43,14 @@ a.fa {
 }
 
 footer.cred {
-  align-self: flex;
+  position: fixed;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  color: #ffffff;
+}
+
+footer.cred a {
+  color: #3647e4;
 }
