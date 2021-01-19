@@ -20,24 +20,28 @@ h2 {
   padding-top: 0px;
 }
 
-a.folioLink {
-  display: block;
-  font-size: 25px;
-  color: #4287f5;
-  text-align: center;
-  padding: 10px;
+.links {
+  display: inline-block;
+  padding-left: 45%;
+  padding-right: 45%;
 }
 
-a.socialLink {
-  display: block;
-  font-size: 25px;
-  color: #4287f5;
-  text-align: center;
-  padding: 10px;
+ul.links {
+  list-style-type: none;
 }
 
-footer {
-  align-self: flex-end;
+a.fa {
+  display: flex;
+  padding-bottom: 20px;
+  padding-left: 35%;
+  font-size: 80px;
+  color: #6d188b;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer.cred {
+  align-self: flex;
   text-align: center;
   color: #ffffff;
 }
