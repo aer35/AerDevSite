@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #222222;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 0px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+a.folioLink {
+  display: block;
+  font-size: 25px;
+  color: #4287f5;
+  text-align: center;
+  padding: 10px;
+}
+
+a.socialLink {
+  display: block;
+  font-size: 25px;
+  color: #4287f5;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  align-self: flex-end;
+  text-align: center;
+  color: #ffffff;
+}
