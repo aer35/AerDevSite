@@ -1,3 +1,5 @@
+/* Padding order: Top Right Bottom Left */
+
 :root {
   color: #ffffff;
 }
@@ -8,22 +10,31 @@ body {
   background: #222222;
 }
 
+.name {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  justify-content: center;
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
-  padding: 25px 25px 0px;
+  padding: 25px 0px 0px;
 }
 
 h2 {
   font-size: 25px;
   text-align: center;
-  padding: 0px 10px;
+  padding: 0px 0px 10px;
 }
 
-.links {
-  padding-left: 45%;
-  padding-right: 45%;
-  display: inline-block;
+div {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  justify-content: center;
 }
 
 ul.links {
@@ -31,11 +42,9 @@ ul.links {
 }
 
 li a.fa {
-  padding-bottom: 20px;
-  padding-left: 35%;
+  padding-right: 10px;
   font-size: 80px;
   color: #3647e4;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -44,8 +53,19 @@ a.fa:hover {
   color: #fd2e51;
 }
 
+li a.stdLink {
+  padding-right: 10px;
+  font-size: 40px;
+  color: #3647e4;
+  text-decoration: none;
+}
+
+a.stdLink:hover {
+  opacity: 0.6;
+  color: #fd2e51;
+}
+
 footer.cred {
-  position: fixed;
   position: fixed;
   left: 0;
   bottom: 0;
