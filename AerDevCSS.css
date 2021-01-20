@@ -2,6 +2,8 @@
 
 :root {
   color: #ffffff;
+  --link-color: #5666f8;
+  --hover-color: #fd2e51;
 }
 
 body {
@@ -32,37 +34,40 @@ h2 {
 
 div {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   width: 50%;
   justify-content: center;
 }
 
-ul.links {
+ul {
   list-style-type: none;
+  padding: 0;
 }
 
 li a.fa {
-  padding-right: 10px;
   font-size: 80px;
-  color: #3647e4;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a.fa:hover {
   opacity: 0.6;
-  color: #fd2e51;
+  color: var(--hover-color);
 }
 
-li a.stdLink {
-  padding-right: 10px;
-  font-size: 40px;
-  color: #3647e4;
+li.links {
+  padding-bottom: 10px;
+}
+
+a.stdLink {
+  font-size: 30px;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a.stdLink:hover {
   opacity: 0.6;
-  color: #fd2e51;
+  color: var(--hover-color);
 }
 
 footer.cred {
@@ -74,7 +79,8 @@ footer.cred {
 }
 
 footer.cred a {
-  color: #3647e4;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 footer.cred a:hover {
