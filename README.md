@@ -7,3 +7,4 @@ For all inquiries please go to AerDev.net
 Known Issues:
 
 1. Darkmode not working on chromium based desktop browsers
+   - Solved: Removed dark mode on Chromium browsers

@@ -2,11 +2,9 @@
   color: #ffffff;
   --text-color: #ffffff;
   --hover-color: #fd2e51;
-  --background-color: #222222;
 }
 
 body {
-  /* background: var(--background-color); */
   font-size: 2rem;
   padding-top: 25px;
 }

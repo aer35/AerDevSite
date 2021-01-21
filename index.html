@@ -11,28 +11,9 @@
     <title>Aaron Mechanic</title>
 
     <script
-      src="https://unpkg.com/darkreader@4.9.26/darkreader.js"
+      src="https://cdn.jsdelivr.net/npm/darkreader@4.9.26/darkreader.min.js"
       type="text/javascript"
     ></script>
-    <script>
-      DarkReader.setFetchMethod(window.fetch);
-      DarkReader.enable();
-      let isDarkModeEnabled = true;
-
-      function toggleDarkMode() {
-        let toggleButtonElement = document.querySelector("#dark-mode-toggle");
-        let toggleIconElement = toggleButtonElement.querySelector(".icon");
-        if (isDarkModeEnabled) {
-          DarkReader.disable();
-          toggleIconElement.className = "sun icon";
-        } else {
-          DarkReader.enable();
-          toggleIconElement.className = "moon icon";
-        }
-        isDarkModeEnabled = !isDarkModeEnabled;
-      }
-    </script>
-
     <link href="theme.css" rel="stylesheet" />
   </head>
 
@@ -99,5 +80,32 @@
       Site in progress 2021 -
       <a href="mailto:contact@AerDev.net">Contact</a>
     </footer>
+
+    <!-- Dark mode doesnt work on chrome. So remove dark mode button. -->
+    <script>
+      let toggleButtonElement = document.querySelector("#dark-mode-toggle");
+      let toggleIconElement = toggleButtonElement.querySelector(".icon");
+      let isChrome =
+        /Chrome/.test(navigator.userAgent) &&
+        /Google Inc/.test(navigator.vendor);
+      if (isChrome) {
+        toggleButtonElement.style.display = "none";
+      } else {
+        DarkReader.setFetchMethod(window.fetch);
+        DarkReader.enable();
+      }
+      let isDarkModeEnabled = true;
+
+      async function toggleDarkMode() {
+        if (isDarkModeEnabled) {
+          DarkReader.disable();
+          toggleIconElement.className = "sun icon";
+        } else {
+          DarkReader.enable();
+          toggleIconElement.className = "moon icon";
+        }
+        isDarkModeEnabled = !isDarkModeEnabled;
+      }
+    </script>
   </body>
 </html>
