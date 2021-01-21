@@ -4,64 +4,100 @@
     <meta charset="utf-8" />
     <meta author="Aaron Mechanic" />
     <meta description="AerDev.net" />
-    <link href="AerDevCSS.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
-    <!-- <script src="Main.js"></script> -->
-
     <title>Aaron Mechanic</title>
+
+    <script
+      src="https://unpkg.com/darkreader@4.9.26/darkreader.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      DarkReader.setFetchMethod(window.fetch);
+      DarkReader.enable();
+      let isDarkModeEnabled = true;
+
+      function toggleDarkMode() {
+        let toggleButtonElement = document.querySelector("#dark-mode-toggle");
+        let toggleIconElement = toggleButtonElement.querySelector(".icon");
+        if (isDarkModeEnabled) {
+          DarkReader.disable();
+          toggleIconElement.className = "sun icon";
+        } else {
+          DarkReader.enable();
+          toggleIconElement.className = "moon icon";
+        }
+        isDarkModeEnabled = !isDarkModeEnabled;
+      }
+    </script>
+
+    <link href="theme.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="name">
-      <h1>Aaron Mechanic</h1>
-      <h2>B.S. Computer Science - CUNY Queens College 2021</h2>
-    </header>
+    <div class="ui right aligned container">
+      <button
+        id="dark-mode-toggle"
+        class="ui circular labeled icon button"
+        onclick="toggleDarkMode()"
+      >
+        <i class="moon icon"></i>Toggle Dark Mode
+      </button>
+    </div>
+    <div class="ui center aligned container">
+      <header class="name">
+        <div class="ui huge header">Aaron Mechanic</div>
+        <div class="sub header">
+          B.S. Computer Science - CUNY Queens College 2021
+        </div>
+      </header>
 
-    <div class="logoLinks">
-      <ul class="links">
-        <li>
-          <a
-            class="fa fa-github-square"
-            target="_blank"
-            href="https://github.com/aer35"
-          ></a>
-        </li>
+      <div class="ui segment basic">
+        <div class="ui horizontal list links" id="socialLink">
+          <div class="item">
+            <a id="Link" target="_blank" href="https://github.com/aer35">
+              <i class="huge github square icon"></i>
+            </a>
+          </div>
 
-        <li>
-          <a
-            class="fa fa-linkedin-square"
-            href="https://www.linkedin.com/in/aaronmechanic/"
-          >
-          </a>
-        </li>
-      </ul>
+          <div class="item">
+            <a
+              id="Link"
+              target="_blank"
+              href="https://www.linkedin.com/in/aaronmechanic/"
+            >
+              <i class="linkedin square icon huge"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui segment basic">
+        <div class="ui list links" id="stdLink">
+          <div class="item">
+            My
+            <a
+              id="Link"
+              href="https://docs.google.com/document/d/1ehJL7WVJ59GvRRkCZdpJp7QH3Pv1bs2aEXObRSv5gqo/edit?usp=sharing"
+              >Resume
+            </a>
+          </div>
+
+          <div class="item">
+            My App:
+            <a id="Link" href="https://expo.io/@aer/projects/WhyEditor"
+              >Why? Editor (EXPO)
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="stdLinks">
-      <ul>
-        <li class="links">
-          My
-          <a
-            class="stdLink"
-            href="https://docs.google.com/document/d/1ehJL7WVJ59GvRRkCZdpJp7QH3Pv1bs2aEXObRSv5gqo/edit?usp=sharing"
-            >Resume
-          </a>
-        </li>
-
-        <li class="links">
-          My App:
-          <a class="stdLink" href="https://expo.io/@aer/projects/WhyEditor"
-            >Why? Editor (EXPO)
-          </a>
-        </li>
-      </ul>
-    </div>
+    <footer class="cred">
+      Site in progress 2021 -
+      <a href="mailto:contact@AerDev.net">Contact</a>
+    </footer>
   </body>
-
-  <footer class="cred">
-    Site in progress 2021 - <a href="mailto:contact@AerDev.net">Contact</a>
-  </footer>
 </html>

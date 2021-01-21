@@ -1,26 +1,6 @@
 /* Padding order: Top Right Bottom Left */
 
-:root {
-  color: #ffffff;
-  --link-color: #5666f8;
-  --hover-color: #fd2e51;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  background: #222222;
-}
-
-.name {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  width: 50%;
-  justify-content: center;
-}
-
-h1 {
+/* h1 {
   font-size: 50px;
   text-align: center;
   padding: 25px 0px 0px;
@@ -35,13 +15,21 @@ h2 {
 div {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 100%;
   justify-content: center;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+} */
+
+.name {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  justify-content: center;
 }
 
 li a.fa {

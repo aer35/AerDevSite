@@ -1,0 +1,43 @@
+:root {
+  color: #ffffff;
+  --text-color: #ffffff;
+  --link-color: #5666f8;
+  --hover-color: #fd2e51;
+  --background-color: #222222;
+}
+
+body {
+  /* background: var(--background-color); */
+  font-size: 2rem;
+  padding-top: 25px;
+}
+
+#socialLink {
+    font-size: ;
+}
+
+#stdLink {
+  font-size: 1.5rem;
+}
+
+footer.cred {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#Link:hover {
+  opacity: 0.6;
+  color: var(--hover-color);
+}
+
+footer.cred a {
+  color: var(--link-color);
+}
+
+footer.cred a:hover {
+  opacity: 0.6;
+}
