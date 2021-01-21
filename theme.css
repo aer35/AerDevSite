@@ -1,7 +1,6 @@
 :root {
   color: #ffffff;
   --text-color: #ffffff;
-  --link-color: #5666f8;
   --hover-color: #fd2e51;
   --background-color: #222222;
 }
@@ -32,10 +31,6 @@ footer.cred {
 #Link:hover {
   opacity: 0.6;
   color: var(--hover-color);
-}
-
-footer.cred a {
-  color: var(--link-color);
 }
 
 footer.cred a:hover {
