@@ -31,6 +31,10 @@ footer.cred {
   color: var(--hover-color);
 }
 
+div.angellist {
+  margin-left: 0em !important;
+}
+
 footer.cred a:hover {
   opacity: 0.6;
 }
