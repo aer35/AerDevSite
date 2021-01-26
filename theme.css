@@ -9,8 +9,22 @@ body {
   padding-top: 25px;
 }
 
+div.content {
+  padding-left: 30px !important;
+}
+
 header {
   padding-top: 10px;
+}
+
+/* #tempIMG {
+  height: 270px;
+  width: 230px;
+} */
+
+#headshot {
+  height: 300px;
+  width: 250px;
 }
 
 #stdLink {
@@ -31,7 +45,7 @@ footer.cred {
   color: var(--hover-color);
 }
 
-div.angellist {
+div.noMargin {
   margin-left: 0em !important;
 }
 
