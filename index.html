@@ -10,7 +10,7 @@
     />
     <link
       rel="shortcut icon"
-      href="images/AerDevIcon2_480.png"
+      href="images/AerDevIcon3_500.png"
       type="image/png"
     />
     <title>Aaron Mechanic</title>
@@ -29,14 +29,14 @@
         class="ui circular labeled icon button"
         onclick="toggleDarkMode()"
       >
-        <i class="moon icon"></i>Toggle Dark Mode
+        <i class="ui moon icon"></i>Toggle Dark Mode
       </button>
     </div>
 
     <div class="ui center aligned container">
       <div class="ui left aligned container">
         <div class="ui items">
-          <div class="item">
+          <div class="ui item">
             <img
               class="ui middle aligned image"
               id="headshot"
@@ -46,7 +46,7 @@
             <div class="ui middle aligned content">
               <header>
                 <div class="ui huge header">Aaron Mechanic</div>
-                <div class="sub header">
+                <div class="ui sub header">
                   B.S. Computer Science - CUNY Queens College 2021
                 </div>
               </header>
@@ -59,7 +59,7 @@
         <div class="ui horizontal list links" id="socialLink">
           <div class="item">
             <a id="Link" target="_blank" href="https://github.com/aer35">
-              <i class="circular white huge github icon" id="socialIcon"></i>
+              <i class="ui circular white huge github icon" id="socialIcon"></i>
             </a>
           </div>
 
@@ -70,19 +70,22 @@
               href="https://www.linkedin.com/in/aaronmechanic/"
             >
               <i
-                class="circular white linkedin alt icon huge"
+                class="ui circular white linkedin alt icon huge"
                 id="socialIcon"
               ></i>
             </a>
           </div>
 
-          <div class="item">
+          <div class="ui item">
             <a
               id="Link"
               target="_blank"
               href="https://angel.co/u/aaron-mechanic"
             >
-              <i class="circular angellist link icon huge" id="socialIcon"></i>
+              <i
+                class="ui circular angellist link icon huge"
+                id="socialIcon"
+              ></i>
             </a>
           </div>
         </div>
@@ -90,7 +93,7 @@
 
       <div class="ui segment basic">
         <div class="ui list links" id="stdLink">
-          <div class="item">
+          <div class="ui item">
             My
             <a
               id="Link"
@@ -99,17 +102,31 @@
             </a>
           </div>
 
-          <div class="item">
-            My App: WhyEditor
-            <a id="Link" href="https://expo.io/@aer/projects/WhyEditor"
-              >(Expo)
-            </a>
+          <div class="ui item">
+            My Apps:
+            <div class="ui segment basic" id="apps">
+              <img
+                class="ui centered mini image"
+                id="appIcon"
+                src="/images/WhyEditorIcon_Cropped.png"
+              />
+              WhyEditor
+              <br />
+              <a id="Link" href="https://expo.io/@aer/projects/WhyEditor"
+                >Expo Go </a
+              >/
+              <a
+                id="Link"
+                href="https://github.com/aer35/WhyEditor/raw/main/APK/WhyEditor-signedAPK-version1.0.1.apk"
+                >.apk</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="cred">
+    <footer class="ui cred">
       Site in progress 2021 -
       <a href="mailto:contact@AerDev.net">Contact</a>
     </footer>

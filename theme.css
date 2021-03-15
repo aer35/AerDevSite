@@ -31,6 +31,10 @@ header {
   font-size: 1.5rem;
 }
 
+#apps {
+  font-size: 1.3rem;
+}
+
 footer.cred {
   position: fixed;
   left: 0;
