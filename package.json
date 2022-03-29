@@ -1,0 +1,27 @@
+{
+  "name": "aerdevsite",
+  "version": "1.0.0",
+  "description": "This repo handles the code behind AerDev.net",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --dist-dir docs",
+    "build": "parcel build index.html --dist-dir docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aer35/AerDevSite.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aer35/AerDevSite/issues"
+  },
+  "homepage": "https://github.com/aer35/AerDevSite#readme",
+  "dependencies": {
+    "darkreader": "^4.9.46",
+    "parcel": "^2.4.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
