@@ -3,5 +3,7 @@
 reset.css
 makefile
 .parcel-cache/
-
+./dist
 node_modules/
+
+dist/

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This repo handles the code behind AerDev.net",
   "scripts": {
-    "start": "parcel index.html --dist-dir docs",
+    "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
