@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/aer35/AerDevSite#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@nextui-org/react": "^1.0.5-beta.5",
     "darkreader": "^4.9.46",
     "parcel": "^2.4.0",

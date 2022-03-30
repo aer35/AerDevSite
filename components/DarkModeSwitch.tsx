@@ -1,6 +1,8 @@
 import { Switch } from "@nextui-org/react";
 import * as DarkReader from "darkreader";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const DarkModeSwitch = () => {
   const [isDark, setDark] = useState(
@@ -24,7 +26,14 @@ const DarkModeSwitch = () => {
     setDark(!isDark);
   };
 
-  return <Switch checked={isDark} onChange={handleChange} />;
+  return (
+    <Switch
+      checked={isDark}
+      onChange={handleChange}
+      iconOff={<FontAwesomeIcon icon={faSun} />}
+      iconOn={<FontAwesomeIcon icon={faMoon} />}
+    />
+  );
 };
 
 export default DarkModeSwitch;
