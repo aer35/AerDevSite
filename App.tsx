@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./main.scss";
+import "./styles/main.scss";
 import {
   Container,
   Row,
@@ -8,18 +8,20 @@ import {
   Text,
   Card,
   Switch,
+  Grid,
 } from "@nextui-org/react";
-import DarkModeSwitch from "./components/DarkModeSwitch";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
 
 export default function App() {
   return (
     <>
-      <Container>
-        {/* Sticky header goes here */}
-        <DarkModeSwitch />
-      </Container>
+      {/* Sticky header goes here */}
+      <Header />
 
       <Container>
+        <AboutMe />
+
         <Container></Container>
         <Card>HELLO</Card>
         <Text
@@ -41,6 +43,7 @@ export default function App() {
             Hello World 2
           </Text>
         </Container>
+        <div style={{ height: "1000px" }} />
       </Container>
     </>
   );

@@ -1,0 +1,12 @@
+:root {
+  --background: #373f47ff;
+  --primary: #7f95d1ff;
+  --primary-dark: rgb(101, 131, 214);
+  --accent: #d3f6dbff;
+}
+
+.aboutMe {
+  .avatar img {
+    object-position: top;
+  }
+}
