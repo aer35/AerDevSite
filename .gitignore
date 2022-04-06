@@ -1,2 +1,9 @@
-
+./node_modules
+./parcel-cache
 reset.css
+makefile
+.parcel-cache/
+./dist
+node_modules/
+
+dist/
