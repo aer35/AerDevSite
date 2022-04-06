@@ -11,7 +11,9 @@ const DarkModeSwitch = () => {
 
   useEffect(() => {
     if (isDark) {
-      DarkReader.auto({});
+      setTimeout(() => {
+        DarkReader.auto({});
+      }, 50);
     }
     window
       .matchMedia("(prefers-color-scheme: dark)")

@@ -18,7 +18,7 @@ import Footer from "./components/Footer";
 export default function App() {
   useEffect(() => {
     DarkReader.setFetchMethod(window.fetch);
-  });
+  }, []);
 
   return (
     <>
