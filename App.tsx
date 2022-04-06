@@ -12,8 +12,14 @@ import {
 } from "@nextui-org/react";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
+import * as DarkReader from "darkreader";
+import Footer from "./components/Footer";
 
 export default function App() {
+  useEffect(() => {
+    DarkReader.setFetchMethod(window.fetch);
+  });
+
   return (
     <>
       {/* Sticky header goes here */}
@@ -21,30 +27,8 @@ export default function App() {
 
       <Container>
         <AboutMe />
-
-        <Container></Container>
-        <Card>HELLO</Card>
-        <Text
-          h3
-          css={{
-            textGradient: "45deg, $blue500 -20%, $pink500 50%",
-          }}
-        >
-          Hello World 1
-        </Text>
-        <Spacer />
-        <Container>
-          <Text
-            h6
-            css={{
-              textGradient: "0deg, #000000 -10%, red 100%",
-            }}
-          >
-            Hello World 2
-          </Text>
-        </Container>
-        <div style={{ height: "1000px" }} />
       </Container>
+      <Footer />
     </>
   );
 }

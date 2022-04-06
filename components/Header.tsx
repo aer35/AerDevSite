@@ -1,16 +1,23 @@
+import { Link } from "@nextui-org/react";
 import DarkModeSwitch from "./DarkModeSwitch";
 import "../styles/Header.scss";
 
 const Header = () => (
   <div className={"header"} id="header">
     <div className="header__links">
-      <a href="" className="header__name">
+      <Link href="" className="header__name" block color="primary">
         Aaron Mechanic
-      </a>
+      </Link>
 
-      <a href="#">Placeholder</a>
-      <a href="#">Placeholder</a>
-      <a href="#">Placeholder</a>
+      <Link href="#" block underline color="primary">
+        Placeholder
+      </Link>
+      <Link href="#" block underline color="primary">
+        Placeholder
+      </Link>
+      <Link href="#" block underline color="primary">
+        Placeholder
+      </Link>
     </div>
     <div className="darkModeSwitch">
       <DarkModeSwitch />

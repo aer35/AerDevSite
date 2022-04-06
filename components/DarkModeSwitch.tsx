@@ -33,6 +33,7 @@ const DarkModeSwitch = () => {
       onChange={handleChange}
       iconOff={<FontAwesomeIcon icon={faSun} />}
       iconOn={<FontAwesomeIcon icon={faMoon} />}
+      style={{}}
     />
   );
 };

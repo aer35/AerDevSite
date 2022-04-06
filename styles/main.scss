@@ -1,14 +1,28 @@
-:root {
-  --background: #373f47ff;
-  --primary: #7f95d1ff;
-  --primary-dark: rgb(101, 131, 214);
-  --accent: #d3f6dbff;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-// Pick a font for the whole website
+:root {
+  --background: var(--nextui-colors-gray100);
+  --primary: var(--nextui-colors-blue500);
+  --primary-dark: var(--nextui-colors-blue700);
+  --primary-light: var(--nextui-colors-blue300);
+  --accent: var(--nextui-colors-cyan500);
+  --open-sans-font: "Open Sans", sans-serif;
+  --nextui-fonts-sans: var(--open-sans-font) !important;
+  --nextui-colors-background: var(--background) !important;
+}
 
 .aboutMe {
   .avatar img {
     object-position: top;
+  }
+}
+
+.social_links {
+  a {
+    margin: 0 10px 0 10px;
+    aspect-ratio: 1;
+    &:hover {
+      color: var(--primary-light);
+    }
   }
 }
