@@ -28,6 +28,9 @@ export default function App() {
       <Container>
         <AboutMe />
       </Container>
+
+      {/* Time to add the resume. Consider adding as another page or adding as a card on the main page */}
+
       <Footer />
     </>
   );
