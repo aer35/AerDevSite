@@ -6,8 +6,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const DarkModeSwitch = () => {
   const [isDark, setDark] = useState(
-    false
-    // window.matchMedia("(prefers-color-scheme: dark)").matches
+    window.matchMedia("(prefers-color-scheme: dark)").matches
   );
 
   useEffect(() => {
