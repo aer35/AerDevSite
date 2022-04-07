@@ -20,9 +20,12 @@ export default function App() {
     DarkReader.setFetchMethod(window.fetch);
   }, []);
 
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <>
-      {/* Sticky header goes here */}
       <Header />
 
       <Container>
