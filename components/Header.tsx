@@ -10,13 +10,10 @@ const Header = () => (
       </Link>
 
       <Link href="#" block underline color="primary">
-        Placeholder
+        Resume
       </Link>
       <Link href="#" block underline color="primary">
-        Placeholder
-      </Link>
-      <Link href="#" block underline color="primary">
-        Placeholder
+        Projects
       </Link>
     </div>
     <div className="darkModeSwitch">
