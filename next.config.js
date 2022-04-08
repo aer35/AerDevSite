@@ -6,5 +6,5 @@ const nextConfig = {
 // module.exports = nextConfig
 
 module.exports = {
-  assetPrefix: "/docs/",
+  assetPrefix: "/Aerdevsite/docs/",
 };
