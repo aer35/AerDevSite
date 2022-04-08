@@ -10,10 +10,15 @@ const DarkModeSwitch = () => {
   );
 
   useEffect(() => {
+    DarkReader.setFetchMethod(window.fetch);
+  }, []);
+
+  useEffect(() => {
     if (isDark) {
+      // Adding timeout is functionaly unecessary but fixes the issue with the switch's coloring upon first render
       setTimeout(() => {
         DarkReader.auto({});
-      }, 50);
+      }, 10);
     }
     window
       .matchMedia("(prefers-color-scheme: dark)")

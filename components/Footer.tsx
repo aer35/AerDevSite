@@ -1,7 +1,7 @@
-import "../styles/Footer.scss";
+import styles from "../styles/Footer.module.scss";
 
 const Footer = () => (
-  <footer className="feet">
+  <footer className={styles.feet}>
     Site in development 2022 -&nbsp;
     <a
       href="mailto:contact@aerdev.net"
