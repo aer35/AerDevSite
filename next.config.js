@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-// module.exports = nextConfig
+module.exports = nextConfig;
 
-module.exports = {
-  assetPrefix: "/AerDevSite/",
-};
+// module.exports = {
+//   assetPrefix: "/AerDevSite/",
+// };
