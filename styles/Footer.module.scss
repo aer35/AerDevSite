@@ -1,10 +1,18 @@
 footer.feet {
-  margin-top: 10px;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   border-top: 1px solid var(--nextui-colors-gray300);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   background-color: var(--nextui-colors-gray200);
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+
+  .left {
+    float: left;
+    padding: 0 15px 0 15px;
+  }
+
+  .right {
+    float: right;
+    padding: 0 15px 0 15px;
+  }
 }

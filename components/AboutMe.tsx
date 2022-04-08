@@ -17,7 +17,7 @@ const AboutMe = () => (
   >
     <Avatar
       className="avatar"
-      src="images/AM_Pic_2.png"
+      src="images/AM_Pic_3.png"
       css={{ size: "$72" }}
       zoomed
     />
