@@ -1,13 +1,14 @@
 import { Link } from "@nextui-org/react";
-import DarkModeSwitch from "./DarkModeSwitch";
 import styles from "../styles/Header.module.scss";
-import { useEffect } from "react";
-import * as DarkReader from "darkreader";
+import dynamic from "next/dynamic";
 
 const Header = () => {
-  useEffect(() => {
-    DarkReader.setFetchMethod(window.fetch);
-  }, []);
+  const DarkModeSwitch = dynamic(
+    () => {
+      return import("./DarkModeSwitch");
+    },
+    { ssr: false }
+  );
 
   return (
     <div className={styles.header} id="header">
