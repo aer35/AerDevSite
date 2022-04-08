@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/react";
+import { Link, Spacer } from "@nextui-org/react";
 import styles from "../styles/Header.module.scss";
 import dynamic from "next/dynamic";
 
@@ -17,9 +17,18 @@ const Header = () => {
           Aaron Mechanic
         </Link>
 
-        <Link href="#" block underline color="primary">
+        {/* temporary resume link */}
+        <Link
+          href="https://registry.jsonresume.org/aer35"
+          // remove target later
+          target="_blank"
+          block
+          underline
+          color="primary"
+        >
           Resume
         </Link>
+
         <Link href="#" block underline color="primary">
           Projects
         </Link>
