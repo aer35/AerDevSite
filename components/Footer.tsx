@@ -14,11 +14,11 @@ const Footer = () => (
     </div>
     <div className={styles.right}>
       Developed using{" "}
-      <a href="https://nextjs.org/" target="_blank">
+      <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
         Next.JS
       </a>{" "}
       and{" "}
-      <a href="https://nextui.org" target="_blank">
+      <a href="https://nextui.org" target="_blank" rel="noreferrer">
         NextUI
       </a>
     </div>
