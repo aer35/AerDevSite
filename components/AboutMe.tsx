@@ -75,7 +75,7 @@ const AboutMe = () => (
     </p>
 
     <Spacer y={1} />
-    <div style={{ height: "200px" }} />
+    <div style={{ height: "500px" }} />
   </Container>
 );
 
