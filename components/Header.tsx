@@ -13,19 +13,12 @@ const Header = () => {
   return (
     <div className={styles.header} id="header">
       <div className={styles.header__links}>
-        <Link href="" className={styles.header__name} block color="primary">
+        <Link href="/" className={styles.header__name} block color="primary">
           Aaron Mechanic
         </Link>
 
         {/* temporary resume link */}
-        <Link
-          href="https://registry.jsonresume.org/aer35"
-          // remove target later
-          target="_blank"
-          block
-          underline
-          color="primary"
-        >
+        <Link href="/resume" block underline color="primary">
           Resume
         </Link>
 

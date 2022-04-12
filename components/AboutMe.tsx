@@ -22,7 +22,7 @@ const AboutMe = () => (
       zoomed
     />
     {/* TODO Choose new image */}
-    <Spacer y={1} />
+    <Spacer y={1.5} />
     <Container
       className="social_links"
       display="flex"
@@ -52,7 +52,7 @@ const AboutMe = () => (
         <FontAwesomeIcon size="4x" icon={faAngellist} />
       </a>
     </Container>
-
+    <Spacer />
     <Text
       h1
       css={{
@@ -63,18 +63,19 @@ const AboutMe = () => (
       Aaron Mechanic
     </Text>
     <Text h3>B.S. Computer Science - CUNY Queens college 2021</Text>
-
-    <p style={{ width: "60%" }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-
-    <Spacer y={1} />
+    <Spacer />
+    <Container className="aboutMe">
+      <Text>
+        Hi! I'm Aaron, a software engineer from in New York City and I've been a
+        computer fanatic my whole life. I fell in love with computers ever since
+        my first, an iMac G3. I love learning new things and improving my skills
+        which is why I decided to become a programmer! Every week 300000 new
+        Javascript frameworks are released and I learn them all. Haha just
+        kidding. Recently I've been working a lot with React Typescript, nextJS,
+        Node, and Swift.
+      </Text>
+    </Container>
+    {/* Codify the text and move the CSS for social links and about me to a module */}
     <div style={{ height: "500px" }} />
   </Container>
 );
