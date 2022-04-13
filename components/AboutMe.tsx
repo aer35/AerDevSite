@@ -38,11 +38,11 @@ const AboutMe = () => (
       <Text>
         Hi! I{"'"}m Aaron, a software engineer from in New York City and I{"'"}
         ve been a computer fanatic my whole life. I fell in love with computers
-        ever since my first, an iMac G3. I love learning new things and
-        improving my skills which is why I decided to become a programmer! Every
-        week 300000 new Javascript frameworks are released and I learn them all.
-        Haha just kidding. Recently I{"'"}ve been working a lot with React
-        Typescript, Next.JS, Node, and Swift.
+        ever since my first, an iMac G3. I decided to become a programmer
+        because I love identifying and solving complex problems, and I love
+        learning new things. Every week 300000 new Javascript frameworks are
+        released and I learn them all. Haha just kidding. Recently I{"'"}ve been
+        working a lot with React Typescript, Next.JS, Node, and Swift.
       </Text>
     </Container>
     {/* Codify the text and move the CSS for social links and about me to a module */}
