@@ -1,0 +1,21 @@
+.aboutMe {
+  .avatar img {
+    object-position: top;
+  }
+}
+
+.social_links {
+  margin-bottom: 30px;
+  a {
+    margin: 0 10px 0 10px;
+    aspect-ratio: 1;
+    &:hover {
+      color: var(--primary-light);
+    }
+  }
+}
+
+.bio p {
+  width: 80%;
+  text-align: center;
+}

@@ -17,7 +17,8 @@
     "darkreader": "^4.9.46",
     "next": "12.1.4",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-toastify": "^8.2.0"
   },
   "devDependencies": {
     "@types/node": "17.0.23",

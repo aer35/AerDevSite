@@ -5,10 +5,11 @@ import {
   faLinkedin,
   faAngellist,
 } from "@fortawesome/free-brands-svg-icons";
+import styles from "../styles/About.module.scss";
 
 const AboutMe = () => (
   <Container
-    className="aboutMe"
+    className={styles.aboutMe}
     display="flex"
     justify="center"
     direction="column"
@@ -16,7 +17,7 @@ const AboutMe = () => (
     alignContent="center"
   >
     <Avatar
-      className="avatar"
+      className={styles.avatar}
       src="images/AM_Pic_3.png"
       css={{ size: "$72" }}
       zoomed
@@ -33,7 +34,7 @@ const AboutMe = () => (
     </Text>
     <Text h3>B.S. Computer Science - CUNY Queens college 2021</Text>
     <Spacer />
-    <Container className="bio">
+    <Container className={styles.bio}>
       <Text>
         Hi! I{"'"}m Aaron, a software engineer from in New York City and I{"'"}
         ve been a computer fanatic my whole life. I fell in love with computers
@@ -41,13 +42,13 @@ const AboutMe = () => (
         improving my skills which is why I decided to become a programmer! Every
         week 300000 new Javascript frameworks are released and I learn them all.
         Haha just kidding. Recently I{"'"}ve been working a lot with React
-        Typescript, nextJS, Node, and Swift.
+        Typescript, Next.JS, Node, and Swift.
       </Text>
     </Container>
     {/* Codify the text and move the CSS for social links and about me to a module */}
     <Spacer y={2} />
     <Container
-      className="social_links"
+      className={styles.social_links}
       display="flex"
       justify="space-evenly"
       alignItems="center"

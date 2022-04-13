@@ -3,6 +3,8 @@ import * as DarkReader from "darkreader";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DarkModeSwitch = () => {
   const [isDark, setDark] = useState(
@@ -28,18 +30,39 @@ const DarkModeSwitch = () => {
       });
   }, []);
 
-  const handleChange = () => {
+  const toggleDark = () => {
     isDark ? DarkReader.disable() : DarkReader.auto({});
     setDark(!isDark);
   };
 
+  const inferiorBrowser = () => {
+    // add toast here
+    toast("Sorry, this feature is not supported in your browser.", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
+  };
+
+  let isFF = navigator.userAgent.search("Firefox") != -1; // True if user browser is Firefox, False if not duh
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (!isFF) {
+  //       const DarkToggle = document.getElementById("DarkToggle");
+  //       DarkToggle.addEventListener("click", inferiorBrowser);
+  //     }
+  //   }, 10);
+  // }, []);
+
   return (
     <Switch
+      id="DarkToggle"
       checked={isDark}
-      onChange={handleChange}
+      onChange={toggleDark} // inferiorBrowser does nothing yet BUT IT WILL
       iconOff={<FontAwesomeIcon icon={faSun} />}
       iconOn={<FontAwesomeIcon icon={faMoon} />}
       style={{}}
+      disabled={!isFF}
+      onClick={!isFF ? inferiorBrowser : undefined}
     />
   );
 };

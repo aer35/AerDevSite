@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/images/AerDevIcon3_500.png" />
       </Head>
       <Header />
+      <ToastContainer />
       <Component {...pageProps} />
       <Footer />
     </NextUIProvider>
