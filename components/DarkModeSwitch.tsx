@@ -36,7 +36,6 @@ const DarkModeSwitch = () => {
   };
 
   const inferiorBrowser = () => {
-    // add toast here
     toast("Sorry, this feature is not supported in your browser.", {
       position: toast.POSITION.BOTTOM_RIGHT,
     });
@@ -44,25 +43,16 @@ const DarkModeSwitch = () => {
 
   let isFF = navigator.userAgent.search("Firefox") != -1; // True if user browser is Firefox, False if not duh
 
-  useEffect(() => {
-    if (!isFF) {
-      setTimeout(() => {
-        DarkReader.auto({});
-        console.log("Test fix happened");
-      }, 3000);
-    }
-  });
-
   return (
     <Switch
       id="DarkToggle"
       checked={isDark}
-      onChange={toggleDark} // inferiorBrowser does nothing yet BUT IT WILL
+      onChange={toggleDark}
       iconOff={<FontAwesomeIcon icon={faSun} />}
       iconOn={<FontAwesomeIcon icon={faMoon} />}
       style={{}}
       disabled={!isFF}
-      onClick={!isFF ? inferiorBrowser : undefined}
+      onClick={isFF ? undefined : inferiorBrowser}
     />
   );
 };
