@@ -48,7 +48,8 @@ const DarkModeSwitch = () => {
     if (!isFF) {
       setTimeout(() => {
         DarkReader.auto({});
-      }, 30);
+        console.log("Test fix happened");
+      }, 3000);
     }
   });
 
