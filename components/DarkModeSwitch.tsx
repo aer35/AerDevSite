@@ -44,14 +44,13 @@ const DarkModeSwitch = () => {
 
   let isFF = navigator.userAgent.search("Firefox") != -1; // True if user browser is Firefox, False if not duh
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     if (!isFF) {
-  //       const DarkToggle = document.getElementById("DarkToggle");
-  //       DarkToggle.addEventListener("click", inferiorBrowser);
-  //     }
-  //   }, 10);
-  // }, []);
+  useEffect(() => {
+    if (!isFF) {
+      setTimeout(() => {
+        DarkReader.auto({});
+      }, 30);
+    }
+  });
 
   return (
     <Switch
