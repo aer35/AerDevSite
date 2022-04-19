@@ -17,12 +17,11 @@ const Header = () => {
           Aaron Mechanic
         </Link>
 
-        {/* temporary resume link */}
         <Link href="/resume" block underline color="primary">
           Resume
         </Link>
 
-        <Link href="#" block underline color="primary">
+        <Link href="/projects" block underline color="primary">
           Projects
         </Link>
       </div>
