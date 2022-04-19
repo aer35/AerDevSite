@@ -1,4 +1,4 @@
-import { Avatar, Container, Spacer, Text, Link } from "@nextui-org/react";
+import { Avatar, Container, Spacer, Text } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,

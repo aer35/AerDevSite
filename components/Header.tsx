@@ -1,4 +1,4 @@
-import { Link, Spacer } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import styles from "../styles/Header.module.scss";
 import dynamic from "next/dynamic";
 

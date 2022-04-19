@@ -1,7 +1,7 @@
-import { Container, Spacer } from "@nextui-org/react";
+import { Card, Collapse, Container, Spacer } from "@nextui-org/react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect } from "react";
+import styles from "../styles/Resume.module.scss";
 
 const ResumePage: NextPage = () => {
   return (
@@ -9,17 +9,37 @@ const ResumePage: NextPage = () => {
       <Head>
         <title>Resume</title>
       </Head>
-      <Container>
-        <iframe
-          src="https://registry.jsonresume.org/aer35"
-          style={{
-            width: "100%",
-            height: "85vh",
-            marginBottom: "5vh",
-            border: "none",
-          }}
-        />
-        {/* <Spacer y={50} /> */}
+      <Container
+        display="flex"
+        justify="center"
+        alignContent="flex-start"
+        className={styles.pageContainer}
+      >
+        <Container className={styles.resumeFrameContainer}>
+          <Collapse
+            bordered
+            title="View Resume"
+            subtitle="Click here to view the resume"
+          >
+            <iframe
+              src="https://registry.jsonresume.org/aer35"
+              loading="lazy"
+              className={styles.resumeFrame}
+            />
+          </Collapse>
+        </Container>{" "}
+        <Spacer />
+        <Container className={styles.downloadText}>
+          <Card bordered clickable>
+            <a
+              href="https://github.com/aer35/AerDevSite/releases/latest"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Click here to download a PDF version of the resume
+            </a>
+          </Card>
+        </Container>
       </Container>
     </>
   );

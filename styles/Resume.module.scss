@@ -1,0 +1,17 @@
+.pageContainer {
+  min-height: 80vh;
+  margin-bottom: 20px;
+
+  .resumeFrameContainer {
+    .resumeFrame {
+      width: 100%;
+      height: 85vh;
+      margin-bottom: 5vh;
+      border: none;
+    }
+  }
+
+  .downloadText a {
+    text-align: center;
+  }
+}
