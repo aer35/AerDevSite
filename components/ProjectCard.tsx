@@ -27,8 +27,9 @@ const ProjectCard = ({
           className={styles.card_main}
           display="flex"
           direction="column"
+          justify="space-around"
         >
-          <Container className={styles.card_half2}>
+          <Container className={styles.card_half1}>
             <Container className={styles.card_title}>
               <Text h2>
                 <a href={linkSRC} target="_blank" rel="noreferrer noopener">
@@ -37,15 +38,16 @@ const ProjectCard = ({
               </Text>
             </Container>
             <Container className={styles.card_desc}>
-              <Text>{description}</Text>
+              <Text h5>{description}</Text>
             </Container>
           </Container>
-          <Container className={styles.card_half1}>
+          <Container className={styles.card_half2}>
             <Image
               className={styles.card_img}
               autoResize={true}
               showSkeleton={true}
               src={imgSRC}
+              loading="lazy"
             />
           </Container>
         </Container>

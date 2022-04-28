@@ -1,4 +1,11 @@
-import { Container, Grid, Loading } from "@nextui-org/react";
+import {
+  Container,
+  Grid,
+  Loading,
+  Text,
+  Image,
+  Spacer,
+} from "@nextui-org/react";
 import { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -6,29 +13,51 @@ import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Projects.module.scss";
 import { Octokit } from "octokit";
 import { components } from "@octokit/openapi-types/types";
-
-// static file incase I run into rate limits
-import githubStars from "../githubStars.json";
+import useSWR from "swr";
+import { OctokitResponse } from "@octokit/types";
+import { toast } from "react-toastify";
 
 const octokit = new Octokit();
 
 type StarredData = components["schemas"]["repository"][];
 
+const after = async <R, T extends (...args: any) => Promise<R>>(
+  delay: number,
+  fn: T
+): Promise<R> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      fn().then(resolve).catch(reject);
+    }, delay);
+  });
+};
+
 const ProjectsPage: NextPage = () => {
-  const [projects, setProjects] = useState<StarredData | undefined>();
+  const { data: _data, error } = useSWR(
+    {
+      method: "GET",
+      url: "/users/{username}/starred",
+      username: "aer35",
+    },
+    (...args) => after(30, () => octokit.request(...args)),
+    {
+      errorRetryCount: 0,
+    }
+  );
+  const data = _data as OctokitResponse<StarredData, 200> | undefined;
+  const projects = data?.data;
 
   useEffect(() => {
-    (async () => {
-      const res = await octokit.request("GET /users/{username}/starred", {
-        username: "aer35",
-      });
-      setProjects(res.data as StarredData);
-    })();
-
-    // setTimeout(() => {
-    //   setProjects(githubStars);
-    // }, 300);
-  }, []);
+    if (error) {
+      console.log(error);
+      toast.error(
+        "Ahhhhhhhh. If this issue persists please hit the contact button and call the dev mean names.",
+        {
+          position: toast.POSITION.BOTTOM_RIGHT,
+        }
+      );
+    }
+  }, [error]);
 
   return (
     <>
@@ -55,11 +84,30 @@ const ProjectsPage: NextPage = () => {
                 </Grid>
               ) : null
             )
+          ) : error ? (
+            <Container
+              display="flex"
+              alignItems="center"
+              alignContent="center"
+              direction="column"
+            >
+              <Image
+                src="https://media0.giphy.com/media/RfvBXK1m8Kcdq/giphy.gif?cid=790b761139d63077a4ed796e67df4ec69d56a40764754412&rid=giphy.gif&ct=g"
+                loading="lazy"
+              />
+              <Spacer />
+              <Text h2 color="error">
+                Something went wrong. Don't blame me.
+              </Text>
+            </Container>
           ) : (
             <Container display="flex" alignItems="center" justify="center">
               <Loading size="xl">Loading projects from Github.com</Loading>
             </Container>
           )}
+          {/* <Grid xs={12} sm={4}>
+            <ProjectCard projName="PLACEHOLDER" />
+          </Grid> */}
         </Grid.Container>
       </Container>
     </>

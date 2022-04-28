@@ -4,30 +4,30 @@
 }
 
 .card {
-  // height: auto;
-
   .card_main {
+    height: 100%;
     padding: 0;
-    // height: 100%;
     text-align: center;
 
     .card_half1 {
-      .card_img {
-        border-radius: 0;
+      padding: 0;
+      margin-bottom: 10px;
+
+      .card_title {
+        flex-wrap: nowrap;
+      }
+
+      .card_desc {
+        margin: 10px;
       }
     }
 
     .card_half2 {
       padding: 0;
-      margin-bottom: 20px;
+      align-self: flex-end;
 
-      .card_title {
-        padding-right: 0;
-        flex-wrap: nowrap;
-      }
-
-      .card_desc {
-        padding: 10px 0px 10px 25px;
+      .card_img {
+        border-radius: 0;
       }
     }
   }
