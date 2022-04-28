@@ -1,9 +1,6 @@
 import { Card, Container, Image, Text } from "@nextui-org/react";
 import styles from "../styles/Projects.module.scss";
 
-// TODO:
-// Let the componenent take variables like links, descriptions, images, etc....
-
 interface projProps {
   projName: string;
   linkSRC?: string;
@@ -25,27 +22,31 @@ const ProjectCard = ({
 }: projProps) => {
   return (
     <>
-      <Card bordered hoverable className={styles.proj}>
-        <Container className={styles.proj_main} display="flex">
-          <Container className={styles.proj_h1}>
-            <Image
-              className={styles.proj_img}
-              autoResize={true}
-              showSkeleton={true}
-              src={imgSRC}
-            />
-          </Container>
-          <Container className={styles.proj_h2}>
-            <Container className={styles.proj_title}>
+      <Card bordered hoverable className={styles.card}>
+        <Container
+          className={styles.card_main}
+          display="flex"
+          direction="column"
+        >
+          <Container className={styles.card_half2}>
+            <Container className={styles.card_title}>
               <Text h2>
                 <a href={linkSRC} target="_blank" rel="noreferrer noopener">
                   {projName}
                 </a>
               </Text>
             </Container>
-            <Container className={styles.proj_desc}>
+            <Container className={styles.card_desc}>
               <Text>{description}</Text>
             </Container>
+          </Container>
+          <Container className={styles.card_half1}>
+            <Image
+              className={styles.card_img}
+              autoResize={true}
+              showSkeleton={true}
+              src={imgSRC}
+            />
           </Container>
         </Container>
       </Card>

@@ -14,8 +14,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@nextui-org/react": "^1.0.7-beta.5",
+    "@octokit/types": "^6.34.0",
     "darkreader": "^4.9.46",
     "next": "12.1.4",
+    "octokit": "^1.7.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-toastify": "^8.2.0"
