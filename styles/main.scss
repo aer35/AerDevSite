@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  --background: var(--nextui-colors-gray100);
+  --background: rgb(42, 44, 45);
   --primary: var(--nextui-colors-blue500);
   --primary-dark: var(--nextui-colors-blue700);
   --primary-light: var(--nextui-colors-blue300);
@@ -9,4 +9,10 @@
   --open-sans-font: "Open Sans", sans-serif;
   --nextui-fonts-sans: var(--open-sans-font) !important;
   --nextui-colors-background: var(--background) !important;
+  --nextui-colors-text: #fff;
+  --nextui-colors-foreground: #fff;
+
+  background: var(--background);
+  width: 100%;
+  height: 100%;
 }

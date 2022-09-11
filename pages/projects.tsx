@@ -97,7 +97,7 @@ const ProjectsPage: NextPage = () => {
               />
               <Spacer />
               <Text h2 color="error">
-                Something went wrong. Don't blame me.
+                Something went wrong. Don{"'"}t blame me.
               </Text>
             </Container>
           ) : (

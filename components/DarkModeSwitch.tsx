@@ -1,3 +1,5 @@
+// No longer used as I am removing dark mode switching in favor of a constant dark theme
+
 import { Switch } from "@nextui-org/react";
 import * as DarkReader from "darkreader";
 import { useState, useEffect } from "react";

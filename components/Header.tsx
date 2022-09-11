@@ -1,15 +1,12 @@
 import { Link } from "@nextui-org/react";
 import styles from "../styles/Header.module.scss";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
+// import { useTheme as useNextTheme } from 'next-themes'
+// import { Switch, useTheme } from '@nextui-org/react'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  const DarkModeSwitch = dynamic(
-    () => {
-      return import("./DarkModeSwitch");
-    },
-    { ssr: false }
-  );
-
   return (
     <div className={styles.header} id="header">
       <div className={styles.header__links}>
@@ -18,15 +15,12 @@ const Header = () => {
         </Link>
 
         <Link href="/resume" block underline color="primary">
-          Resume
+          Experience
         </Link>
 
         <Link href="/projects" block underline color="primary">
           Projects
         </Link>
-      </div>
-      <div className={styles.darkModeSwitch}>
-        <DarkModeSwitch />
       </div>
     </div>
   );

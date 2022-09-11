@@ -1,4 +1,4 @@
-import { Avatar, Container, Spacer, Text } from "@nextui-org/react";
+import { Avatar, Card, Container, Spacer, Text } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -32,21 +32,34 @@ const AboutMe = () => (
     >
       Aaron Mechanic
     </Text>
-    <Text h3>B.S. Computer Science - CUNY Queens college 2021</Text>
+    <Text h3>
+      Software Developer I -{" "}
+      {
+        <a
+          className={styles.springLink}
+          href="https://springhealth.com/"
+          target={"_blank"}
+          rel="noreferrer noopener"
+        >
+          Spring Health
+        </a>
+      }
+    </Text>
+    <Text h6>B.S. Computer Science - CUNY Queens college 2021</Text>
     <Spacer />
     <Container className={styles.bio}>
-      <Text>
-        Hi! I{"'"}m Aaron, a software engineer from in New York City and I{"'"}
-        ve been a computer fanatic my whole life. I fell in love with computers
-        ever since my first, an iMac G3. I decided to become a programmer
-        because I love identifying and solving complex problems, and I love
-        learning new things. Every week 300000 new Javascript frameworks are
-        released and I learn them all. Haha just kidding. Recently I{"'"}ve been
-        working a lot with React Typescript, Next.JS, Node, and Swift.
-      </Text>
+      <Card bordered>
+        <Text className={styles.bioText}>
+          Hi! I{"'"}m Aaron, a software engineer from in New York City and I
+          {"'"}ve been a computer fanatic my whole life. I fell in love with
+          computers ever since my first, an iMac G3. I decided to become a
+          programmer because I love identifying and solving complex problems,
+          and I love learning new things. Every week 300,000 new Javascript
+          frameworks are released and I learn them all. Haha just kidding.
+        </Text>
+      </Card>
     </Container>
-    {/* Codify the text and move the CSS for social links and about me to a module */}
-    <Spacer y={2} />
+    <Spacer y={1.5} />
     <Container
       className={styles.social_links}
       display="flex"

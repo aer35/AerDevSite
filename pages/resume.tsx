@@ -1,4 +1,4 @@
-import { Card, Collapse, Container, Spacer } from "@nextui-org/react";
+import { Card, Collapse, Container, Spacer, Text } from "@nextui-org/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Resume.module.scss";
@@ -27,7 +27,7 @@ const ResumePage: NextPage = () => {
               className={styles.resumeFrame}
             />
           </Collapse>
-        </Container>{" "}
+        </Container>
         <Spacer />
         <Container className={styles.downloadText}>
           <Card bordered clickable>
@@ -38,6 +38,16 @@ const ResumePage: NextPage = () => {
             >
               Click here to download a PDF version of the resume
             </a>
+          </Card>
+        </Container>
+        <Spacer />
+        <Container>
+          <Card className={styles.lnguagesContainer} bordered>
+            <Text h3 className={styles.languagesTitle}>
+              Languages and Technologies
+            </Text>
+            <Spacer />
+            <Text className={styles.languagesText}>TODO</Text>
           </Card>
         </Container>
       </Container>

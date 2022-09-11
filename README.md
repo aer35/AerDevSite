@@ -8,3 +8,18 @@ Website font provided by Google.
 Design and programming by Aaron Mechanic.
 
 For all inquiries please contact [contact@AerDev.net](mailto:contact@AerDev.net)
+
+
+Dear Aaron,
+Did you forget how to run the site locally again?
+`npm run dev`
+It's that simple.
+
+Did you forget how to build the site for publishing?
+`npm run build`
+It's that simple.
+
+Please stop forgetting things.
+
+Sincerely,
+Smarter Better Aaron

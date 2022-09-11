@@ -4,6 +4,11 @@
   }
 }
 
+.springLink {
+  color: rgb(55, 131, 124) !important;
+  text-decoration: underline 2px !important;
+}
+
 .social_links {
   margin-bottom: 30px;
   a {
@@ -15,7 +20,10 @@
   }
 }
 
-.bio p {
+.bio {
   width: 80%;
-  text-align: center;
+
+  .bioText {
+    text-align: center;
+  }
 }
