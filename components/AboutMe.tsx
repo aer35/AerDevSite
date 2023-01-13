@@ -50,13 +50,15 @@ const AboutMe = () => (
     <Container className={styles.bio}>
       <Card bordered>
         <Text className={styles.bioText}>
-          Hi! I{"'"}m Aaron, a software engineer from in New York City and I
+          Hi! I{"'"}m Aaron, a software engineer from New York City and I
           {"'"}ve been a computer fanatic my whole life. I fell in love with
           computers ever since my first, an iMac G3. I decided to become a
           programmer because I love identifying and solving complex problems,
           and I love learning new things. Every week 300,000 new Javascript
           frameworks are released and I learn them all. Haha just kidding.
         </Text>
+        <Spacer/>
+        <Text className={styles.bioText}>In 2021, at the height of the pandemic, I graduated from CUNY Queens college with a Bachelors in Computer Science. Currently, I am employed by Spring Health as a Software Developer 1. </Text>
       </Card>
     </Container>
     <Spacer y={1.5} />

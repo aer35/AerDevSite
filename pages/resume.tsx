@@ -47,7 +47,7 @@ const ResumePage: NextPage = () => {
               Languages and Technologies
             </Text>
             <Spacer />
-            <Text className={styles.languagesText}>TODO</Text>
+            <Text className={styles.languagesText}>React - JS - TS - Ruby on rails - Laravel PHP - SQL</Text>
           </Card>
         </Container>
       </Container>

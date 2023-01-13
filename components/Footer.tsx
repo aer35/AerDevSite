@@ -3,7 +3,7 @@ import styles from "../styles/Footer.module.scss";
 const Footer = () => (
   <footer className={styles.feet}>
     <div className={styles.left}>
-      &copy; 2022 Aaron Mechanic -{" "}
+      &copy; 2023 Aaron Mechanic -{" "}
       <a
         href="mailto:contact@aerdev.net"
         target="_blank"
