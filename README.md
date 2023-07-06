@@ -10,18 +10,20 @@ Design and programming by Aaron Mechanic.
 For all inquiries please contact [contact@AerDev.net](mailto:contact@AerDev.net)
 
 
-Dear Aaron,
-Did you forget how to run the site locally again?
-`npm run dev`
+Dear Aaron,  
+Did you forget how to run the site locally again?  
+`npm run dev`  
 It's that simple.
 
-Did you forget how to build the site for publishing?
-`npm run build`
+Did you forget how to build the site for publishing?  
+`npm run build`  
 It's that simple.
 
-Committing will run the build for you.
+NOTE: Committing will run the build for you.
+
+Running `npm update` has a tendency to break things. Maybe don't :)
 
 Please stop forgetting things.
 
-Sincerely,
+Sincerely,  
 Smarter Better Aaron

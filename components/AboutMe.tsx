@@ -58,7 +58,7 @@ const AboutMe = () => (
           frameworks are released and I learn them all. Haha just kidding.
         </Text>
         <Spacer/>
-        <Text className={styles.bioText}>In 2021, at the height of the pandemic, I graduated from CUNY Queens college with a Bachelors in Computer Science. Currently, I am employed by Spring Health as a Software Developer 1. </Text>
+        <Text className={styles.bioText}>In 2021, at the height of the pandemic, I graduated from CUNY Queens college with a Bachelors in Computer Science. In June 2022 I started as a Software Development Intern for Spring Health. In September I was hired full time as a Software Developer I. Currently, I am employed by Spring Health as a Software Developer 2. </Text>
       </Card>
     </Container>
     <Spacer y={1.5} />
