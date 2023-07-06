@@ -19,6 +19,8 @@ Did you forget how to build the site for publishing?
 `npm run build`
 It's that simple.
 
+Committing will run the build for you.
+
 Please stop forgetting things.
 
 Sincerely,

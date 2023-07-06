@@ -33,7 +33,7 @@ const AboutMe = () => (
       Aaron Mechanic
     </Text>
     <Text h3>
-      Software Developer I -{" "}
+      Software Developer II -{" "}
       {
         <a
           className={styles.springLink}
