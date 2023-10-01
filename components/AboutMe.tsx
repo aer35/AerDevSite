@@ -6,7 +6,6 @@ import {
     faAngellist,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/About.module.scss";
-import {ReadableByteStreamController} from "stream/web";
 
 const AboutMe = () => (
     <Container
@@ -90,7 +89,7 @@ const AboutMe = () => (
         <Container className={styles.bio}>
             <Card bordered>
                 <Container className={styles.history}>
-                    <Text h3>Work History</Text>
+                    <Text h3>{`Work History`}</Text>
                     <ul>
                         <li>
                             <Grid className={styles.jobItem}>
