@@ -58,36 +58,6 @@ const AboutMe = () => (
             </Card>
         </Container>
         <Spacer y={1.5}/>
-        <Container className={styles.bio}>
-            <Card bordered>
-                <Container className={styles.history}>
-                    <Text h3>Work History</Text>
-                    <ul>
-                        <li>
-                            <Grid className={styles.jobItem}>
-                                <Container className={styles.jobDetails}>
-                                    <Text>{`Hello World`}</Text>
-                                </Container>
-                                <Container className={styles.jobDate}>
-                                    <Text>{`January 1900`}</Text>
-                                </Container>
-                            </Grid>
-                        </li>
-                        <li>
-                            <Grid className={styles.jobItem}>
-                                <Container className={styles.jobDetails}>
-                                    <Text>{`Hello World`}</Text>
-                                </Container>
-                                <Container className={styles.jobDate}>
-                                    <Text>{`January 1900`}</Text>
-                                </Container>
-                            </Grid>
-                        </li>
-                    </ul>
-                </Container>
-            </Card>
-        </Container>
-        <Spacer y={3}/>
         <Container
             className={styles.social_links}
             display="flex"
@@ -116,6 +86,35 @@ const AboutMe = () => (
             >
                 <FontAwesomeIcon size="4x" icon={faAngellist}/>
             </a>
+        </Container>
+        <Container className={styles.bio}>
+            <Card bordered>
+                <Container className={styles.history}>
+                    <Text h3>Work History</Text>
+                    <ul>
+                        <li>
+                            <Grid className={styles.jobItem}>
+                                <Container className={styles.jobDetails}>
+                                    <Text>{`Hello World`}</Text>
+                                </Container>
+                                <Container className={styles.jobDate}>
+                                    <Text>{`January 1900`}</Text>
+                                </Container>
+                            </Grid>
+                        </li>
+                        <li>
+                            <Grid className={styles.jobItem}>
+                                <Container className={styles.jobDetails}>
+                                    <Text>{`Hello World`}</Text>
+                                </Container>
+                                <Container className={styles.jobDate}>
+                                    <Text>{`January 1900`}</Text>
+                                </Container>
+                            </Grid>
+                        </li>
+                    </ul>
+                </Container>
+            </Card>
         </Container>
     </Container>
 );
