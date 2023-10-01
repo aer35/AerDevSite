@@ -11,9 +11,11 @@
 
 .social_links {
   margin-bottom: 30px;
+
   a {
     margin: 0 10px 0 10px;
     aspect-ratio: 1;
+
     &:hover {
       color: var(--primary-light);
     }
@@ -25,5 +27,23 @@
 
   .bioText {
     text-align: center;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jobItem {
+  display: flex;
+  columns: 2;
+
+  .jobDetails {
+  }
+
+  .jobDate {
+    text-align: end;
   }
 }
