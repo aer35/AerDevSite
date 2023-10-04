@@ -10,8 +10,6 @@
 }
 
 .social_links {
-  margin-bottom: 30px;
-
   a {
     margin: 0 10px 0 10px;
     aspect-ratio: 1;
@@ -24,7 +22,6 @@
 
 .bio {
   width: 80%;
-  margin-bottom: 30px;
 
   .bioText {
     text-align: center;
@@ -38,7 +35,7 @@
 }
 
 .jobItem {
-  display: flex;
+
   columns: 2;
 
   .jobDetails {
