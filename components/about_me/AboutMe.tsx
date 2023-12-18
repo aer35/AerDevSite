@@ -8,7 +8,15 @@ import {
 import styles from "../../styles/About.module.scss";
 import constants from "../constants"
 
-const AboutMe = () => (
+const AboutMe = () => {
+    const formatDegree = constants.education.degree + ` - ` + constants.education.schoolName + ` ` + constants.education.gradYear;
+    const socialLinks = () => {
+        for (const key in constants.socialLinks) {
+
+        }
+    }
+
+    return (
         <Container
             className={styles.aboutMe}
             display="flex"
@@ -33,19 +41,19 @@ const AboutMe = () => (
             {constants.currentJob.positionTitle &&
                 <Text h3>
                     {constants.currentJob.positionTitle + ` - ` + constants.currentJob.companyName}
-                </Text>}
-            <Text h6>{`B.S.Computer Science - CUNY Queens college 2021`}</Text>
+                </Text>
+            }
+            <Text h6>{formatDegree}</Text>
             <Spacer/>
             <Container className={styles.bio}>
                 <Card bordered>
                     <Text
-                        className={styles.bioText}>{`Hi! I'm Aaron, a software engineer from New York City and I've been a computer fanatic my whole life. I fell in love with computers ever since my first, an iMac G3. I decided to become a programmer because I love identifying and solving complex problems, and I love learning new things. Every week 300,000 new Javascript frameworks are released and I learn them all. Haha just kidding.`}
+                        className={styles.bioText}>
+                        <p>{`Hi! I'm Aaron, a software engineer from New York City and I've been a computer fanatic my whole life. I fell in love with computers ever since my first, the iconic `}<a
+                            href={"https://en.wikipedia.org/wiki/IMac_G3"} target={"_blank"} rel={"noreferrer"}>iMac
+                            G3</a>{`. Becoming a programmer just made sense because I love building things, identifying and solving complex problems, and learning. Every week 300,000 new Javascript frameworks are released and I learn them all. Haha just kidding. I gain an immense amount of satisfaction when something I built comes together or when I find a solution to a long standing issue. I also love helping others gain the same satisfaction which is why I am a big proponent of mob and pair programming.`}
+                        </p>
                     </Text>
-                    <Spacer/>
-                    <Text className={styles.bioText}>{`In 2021, at the height of the pandemic, I graduated from CUNY Queens
-                    college with a Bachelors in Computer Science. In June 2022 I started as a Software Development
-                    Intern for Spring Health. In September I was hired full time as a Software Developer I. Currently, I
-                    am employed by Spring Health as a Software Developer 2.`}</Text>
                 </Card>
             </Container>
             <Spacer y={1.5}/>
@@ -132,6 +140,8 @@ const AboutMe = () => (
             </Container>
         </Container>
     )
-;
+        ;
+}
+
 
 export default AboutMe;
