@@ -5,7 +5,8 @@ import {
     faLinkedin,
     faAngellist,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "../styles/About.module.scss";
+import styles from "../../styles/About.module.scss";
+import constants from "../constants"
 
 const AboutMe = () => (
         <Container
@@ -27,21 +28,12 @@ const AboutMe = () => (
                 h1
                 weight="extrabold"
             >
-                {`Aaron Mechanic`}
+                {constants.me.fname + constants.me.lname}
             </Text>
-            <Text h3>
-                {`Software Developer II - `}
-                {
-                    <a
-                        className={styles.springLink}
-                        href="https://springhealth.com/"
-                        target={"_blank"}
-                        rel="noreferrer noopener"
-                    >
-                        {`Spring Health`}
-                    </a>
-                }
-            </Text>
+            {constants.currentJob.positionTitle &&
+                <Text h3>
+                    {constants.currentJob.positionTitle + ` - ` + constants.currentJob.companyName}
+                </Text>}
             <Text h6>{`B.S.Computer Science - CUNY Queens college 2021`}</Text>
             <Spacer/>
             <Container className={styles.bio}>
