@@ -7,24 +7,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../../styles/About.module.scss";
 import constants from "../constants"
+import SocialLinks from "./SocialLinks";
+import Bio from "./Bio";
 
 const AboutMe = () => {
-    const formatDegree = constants.education.degree + ` - ` + constants.education.schoolName + ` ` + constants.education.gradYear;
-    const socialLinks = () => {
-        for (const key in constants.socialLinks) {
-
-        }
-    }
+    const formatDegree = `${constants.education.degree} - ${constants.education.schoolName} ${constants.education.gradYear}`;
 
     return (
-        <Container
-            className={styles.aboutMe}
-            display="flex"
-            justify="center"
-            direction="column"
-            alignItems="center"
-            alignContent="center"
-        >
+        <Container className={styles.aboutMe}>
             <Avatar
                 className={styles.avatar}
                 src="images/AM_Pic_3.png"
@@ -35,62 +25,28 @@ const AboutMe = () => {
             <Text
                 h1
                 weight="extrabold"
+                css={{
+                    textGradient: "30deg, var(--primary) -20%, $red500 150%",
+                }}
             >
-                {constants.me.fname + constants.me.lname}
+                {`${constants.me.fname} ${constants.me.lname}`}
             </Text>
             {constants.currentJob.positionTitle &&
                 <Text h3>
-                    {constants.currentJob.positionTitle + ` - ` + constants.currentJob.companyName}
+                    {`${constants.currentJob.positionTitle} - ${constants.currentJob.companyName}`}
                 </Text>
             }
             <Text h6>{formatDegree}</Text>
             <Spacer/>
-            <Container className={styles.bio}>
-                <Card bordered>
-                    <Text
-                        className={styles.bioText}>
-                        <p>{`Hi! I'm Aaron, a software engineer from New York City and I've been a computer fanatic my whole life. I fell in love with computers ever since my first, the iconic `}<a
-                            href={"https://en.wikipedia.org/wiki/IMac_G3"} target={"_blank"} rel={"noreferrer"}>iMac
-                            G3</a>{`. Becoming a programmer just made sense because I love building things, identifying and solving complex problems, and learning. Every week 300,000 new Javascript frameworks are released and I learn them all. Haha just kidding. I gain an immense amount of satisfaction when something I built comes together or when I find a solution to a long standing issue. I also love helping others gain the same satisfaction which is why I am a big proponent of mob and pair programming.`}
-                        </p>
-                    </Text>
-                </Card>
-            </Container>
+            <Bio/>
+            {/* Try and remove these spacers and replace with CSS GAP */}
             <Spacer y={1.5}/>
-            <Container
-                className={styles.social_links}
-                display="flex"
-                justify="space-evenly"
-                alignItems="center"
-                alignContent="center"
-            >
-                <a
-                    href="https://github.com/aer35"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <FontAwesomeIcon size="4x" icon={faGithub}/>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/aaronmechanic/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <FontAwesomeIcon size="4x" icon={faLinkedin}/>
-                </a>
-                <a
-                    href="https://angel.co/u/aaron-mechanic"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <FontAwesomeIcon size="4x" icon={faAngellist}/>
-                </a>
-            </Container>
+            <SocialLinks/>
             <Spacer y={1.5}/>
             <Container className={styles.bio}>
                 <Card bordered>
                     <Container className={styles.history}>
-                        <Text h3>{`Work History`}</Text>
+                        <Text h3>{`Professional Experience`}</Text>
                         {/* Break this out into reusable components */}
                         <ul>
                             <li>
@@ -139,8 +95,7 @@ const AboutMe = () => {
                 </Card>
             </Container>
         </Container>
-    )
-        ;
+    );
 }
 
 

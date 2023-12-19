@@ -32,7 +32,10 @@ Smarter Better Aaron
 
 ## TODO
 
-- Convert to chakraUI
+- Change UI library
+    - Chakra or MaterialUI or ...
 - Update dependencies
 - Consider moving this to a self-hosted site instead of GitHub pages.
+- Responsive Design
+- Accessibility
 - Add AI... somewhere

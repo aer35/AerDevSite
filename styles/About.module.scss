@@ -1,12 +1,13 @@
 .aboutMe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+
   .avatar img {
     object-position: top;
   }
-}
-
-.springLink {
-  color: rgb(55, 131, 124) !important;
-  text-decoration: underline 2px !important;
 }
 
 .social_links {

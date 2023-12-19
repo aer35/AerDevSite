@@ -2,8 +2,8 @@ import {faAngellist, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-ic
 
 const constants = {
     me: {
-        "fname": "Aaron",
-        "lname": "Mechanic",
+        fname: "Aaron",
+        lname: "Mechanic",
     },
     education: {
         schoolName: "CUNY Queens college",
@@ -17,15 +17,18 @@ const constants = {
     socialLinks: {
         github: {
             link: "https://github.com/aer35",
-            icon: faGithub
+            icon: faGithub,
+            key: "github",
         },
         linkedin: {
             link: "https://www.linkedin.com/in/aaronmechanic/",
-            icon: faLinkedin
+            icon: faLinkedin,
+            key: "linkedin",
         },
         wellfound: {
             link: "https://wellfound.com/u/aaron-mechanic",
-            icon: faAngellist
+            icon: faAngellist,
+            key: "wellfound",
         },
     }
 
