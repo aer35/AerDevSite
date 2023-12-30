@@ -2,8 +2,6 @@ import {Container, Grid, Text} from "@nextui-org/react";
 import PositionItem from "./PositionItem";
 import styles from "../../styles/About.module.scss";
 import constants from "../constants";
-import positionItem from "./PositionItem";
-
 
 const CompanyItems = () => {
     return <Container className={styles.jobDetails}>
