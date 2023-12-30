@@ -31,24 +31,23 @@ const constants = {
         positionTitle: "",
         companyName: "",
     },
-    pastJobs: {
-        springHealth: {
-            companyName: "Spring Health",
-            positions: [{
-                title: "Software Developer 2",
-                start: "June 2023",
-                end: "December 2023"
-            }, {
-                title: "Software Developer 1",
-                start: "September 2022",
-                end: "June 2023"
-            }, {
-                title: "Software Development Intern",
-                start: "June 2022",
-                end: "Sept 2023"
-            }]
-        }
-    }
+    pastJobs: [{
+        companyName: "Spring Health",
+        positions: [{
+            key: "Software Developer 2",
+            start: "June 2023",
+            end: "December 2023"
+        }, {
+            key: "Software Developer 1",
+            start: "September 2022",
+            end: "June 2023"
+        }, {
+            key: "Software Development Intern",
+            start: "June 2022",
+            end: "Sept 2023"
+        }]
+    }]
 }
+
 
 export default constants;
