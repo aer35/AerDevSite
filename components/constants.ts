@@ -27,6 +27,14 @@ const constants = {
             key: "wellfound",
         },
     },
+    resume: {
+        downloadLink: "https://github.com/aer35/AerDevSite/releases/latest",
+        viewLink: "https://registry.jsonresume.org/aer35",
+        click: "Click here to download a PDF of my resume",
+        title: "Resume",
+        subtitle: "Click here to view my resume",
+
+    },
     currentJob: {
         positionTitle: "",
         companyName: "",

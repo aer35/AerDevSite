@@ -40,11 +40,6 @@ const AboutMe = () => {
             <Text h6>{formatDegree}</Text>
             <Spacer/>
             <Bio/>
-            {/* Try and remove these spacers and replace with CSS GAP */}
-            <Spacer y={1.5}/>
-            <SocialLinks/>
-            <Spacer y={1.5}/>
-            <WorkExperience/>
         </Container>
     );
 }

@@ -8,16 +8,18 @@ type PositionType = {
 }
 
 const PositionItem = ({position}: { position: PositionType }) => {
-    return <Container>
-        <Grid className={styles.jobItem}>
-            <Text h6>
-                {`${position.key}`}
-            </Text>
-            <Container className={styles.jobDate}>
-                <Text h6>{`${position.start} - ${position.end}`}</Text>
-            </Container>
-        </Grid>
-    </Container>
+    return (
+        <Container>
+            <Grid className={styles.jobItem}>
+                <Text h6>
+                    {`${position.key}`}
+                </Text>
+                <Container className={styles.jobDate}>
+                    <Text h6>{`${position.start} - ${position.end}`}</Text>
+                </Container>
+            </Grid>
+        </Container>
+    );
 }
 
 export default PositionItem
