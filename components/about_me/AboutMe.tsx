@@ -18,7 +18,7 @@ const AboutMe = () => {
         <Container className={styles.aboutMe}>
             <Avatar
                 className={styles.avatar}
-                src="images/AM_Pic_3.png"
+                src="images/AM_Pic_2.png"
                 css={{size: "$72"}}
                 zoomed
             />
