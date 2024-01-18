@@ -15,7 +15,6 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@nextui-org/react": "^1.0.7-beta.5",
     "@octokit/types": "^6.34.0",
-    "darkreader": "^4.9.46",
     "next": "^14.0.4",
     "next-themes": "^0.2.1",
     "octokit": "^3.1.2",

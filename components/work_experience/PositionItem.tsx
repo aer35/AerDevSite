@@ -9,7 +9,7 @@ type PositionType = {
 
 const PositionItem = ({position}: { position: PositionType }) => {
     return (
-        <Container>
+        <Container style={{margin: "6px 0 0 0 "}}>
             <Grid className={styles.jobItem}>
                 <Text h6>
                     {`${position.key}`}

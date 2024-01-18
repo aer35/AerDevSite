@@ -12,19 +12,19 @@ const constants = {
     },
     socialLinks: {
         github: {
+            key: "github",
             link: "https://github.com/aer35",
             icon: faGithub,
-            key: "github",
         },
         linkedin: {
+            key: "linkedin",
             link: "https://www.linkedin.com/in/aaronmechanic/",
             icon: faLinkedin,
-            key: "linkedin",
         },
         wellfound: {
+            key: "wellfound",
             link: "https://wellfound.com/u/aaron-mechanic",
             icon: faAngellist,
-            key: "wellfound",
         },
     },
     resume: {

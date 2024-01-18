@@ -9,7 +9,8 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Home</title>
+                <title>Welcome!</title>
+                <meta name="darkreader-lock"/>
             </Head>
             <Container style={{padding: "36px 0 20px 0"}}>
                 <AboutMe/>

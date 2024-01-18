@@ -1,15 +1,7 @@
-import {Avatar, Card, Container, Grid, Spacer, Text} from "@nextui-org/react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-    faLinkedin,
-    faAngellist,
-} from "@fortawesome/free-brands-svg-icons";
+import {Avatar, Container, Spacer, Text} from "@nextui-org/react";
 import styles from "../../styles/About.module.scss";
 import constants from "../constants"
-import SocialLinks from "./SocialLinks";
 import Bio from "./Bio";
-import WorkExperience from "../work_experience/WorkExperience";
 
 const AboutMe = () => {
     const formatDegree = `${constants.education.degree} - ${constants.education.schoolName} ${constants.education.gradYear}`;
