@@ -3,7 +3,6 @@ import type {AppProps} from "next/app";
 import {NextUIProvider} from "@nextui-org/react";
 import {config} from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import {ToastContainer} from "react-toastify";
