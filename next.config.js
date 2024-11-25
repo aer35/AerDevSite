@@ -3,7 +3,6 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export',
     basePath: '/AerDevSite',
-    distDir: 'docs',
     images: {
         path: '/images',
         loader: 'default',
