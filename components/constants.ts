@@ -30,7 +30,7 @@ const constants = {
     resume: {
         downloadLink: "https://github.com/aer35/AerDevSite/releases/latest",
         viewLink: "https://registry.jsonresume.org/aer35",
-        click: "Click here to download a PDF of my resume",
+        click: "Click here to download a PDF of my full resume",
         title: "Resume",
         subtitle: "Click here to view my resume",
 
@@ -43,16 +43,9 @@ const constants = {
         companyName: "Spring Health",
         positions: [{
             key: "Software Developer 2",
-            start: "June 2023",
-            end: "December 2023"
-        }, {
-            key: "Software Developer 1",
-            start: "September 2022",
-            end: "June 2023"
-        }, {
-            key: "Software Development Intern",
             start: "June 2022",
-            end: "Sept 2023"
+            end: "December 2023",
+            notes: "Previous positions: Software Development Intern, Software Developer 1"
         }]
     }]
 }

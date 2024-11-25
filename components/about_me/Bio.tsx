@@ -6,6 +6,7 @@ const Bio = () => {
     return <Container className={styles.bio}>
         <Card bordered>
             <Text className={styles.bioText}>
+                {/* This should be in the constants file, but I have a feeling the hyperlink did not like that when I initially wrote this. */}
                 {`Hi! I'm Aaron, a software engineer from New York City and I've been a computer fanatic my whole life. I fell in love with computers ever since my first, the iconic `}<a
                 href={"https://en.wikipedia.org/wiki/IMac_G3"} target={"_blank"}
                 rel={"noreferrer noopener"}>iMac

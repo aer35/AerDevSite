@@ -3,6 +3,10 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export',
     distDir: 'docs',
+    images: {
+        path: '/images',
+        loader: 'default',
+    }
 };
 
 module.exports = nextConfig;

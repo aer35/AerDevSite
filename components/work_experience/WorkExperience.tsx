@@ -13,19 +13,20 @@ const WorkExperience = () => {
                     <CompanyItem/>
                 </Container>
             </Card>
-            <Container className={styles.resumeFrameContainer}>
-                <Collapse
-                    bordered
-                    title={constants.resume.title}
-                    subtitle={constants.resume.subtitle}
-                >
-                    <iframe
-                        src={constants.resume.viewLink}
-                        loading="lazy"
-                        className={styles.resumeFrame}
-                    />
-                </Collapse>
-            </Container>
+            {/* Removing this iframe. Custom changes to schema have made it incompatible with the online renderer. */}
+            {/*<Container className={styles.resumeFrameContainer}>*/}
+            {/*    <Collapse*/}
+            {/*        bordered*/}
+            {/*        title={constants.resume.title}*/}
+            {/*        subtitle={constants.resume.subtitle}*/}
+            {/*    >*/}
+            {/*        <iframe*/}
+            {/*            src={constants.resume.viewLink}*/}
+            {/*            loading="lazy"*/}
+            {/*            className={styles.resumeFrame}*/}
+            {/*        />*/}
+            {/*    </Collapse>*/}
+            {/*</Container>*/}
             <Container className={styles.link}>
                 <a
                     href={constants.resume.downloadLink}

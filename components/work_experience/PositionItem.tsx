@@ -5,6 +5,7 @@ type PositionType = {
     key: string,
     start: string,
     end: string
+    notes?: string,
 }
 
 const PositionItem = ({position}: { position: PositionType }) => {
@@ -16,8 +17,12 @@ const PositionItem = ({position}: { position: PositionType }) => {
                 </Text>
                 <Container className={styles.jobDate}>
                     <Text h6>{`${position.start} - ${position.end}`}</Text>
+
                 </Container>
             </Grid>
+            {
+                position.notes ? <Text h6 size={12}>{`${position.notes}`}</Text> : ''
+            }
         </Container>
     );
 }
