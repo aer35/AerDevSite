@@ -5,7 +5,7 @@
   "homepage": ".",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -15,12 +15,11 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@nextui-org/react": "^1.0.7-beta.5",
     "@octokit/types": "^6.34.0",
-    "darkreader": "^4.9.46",
-    "next": "12.1.4",
+    "next": "^14.0.4",
     "next-themes": "^0.2.1",
-    "octokit": "^1.7.1",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "octokit": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-toastify": "^8.2.0",
     "swr": "^1.3.0"
   },

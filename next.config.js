@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+    reactStrictMode: true,
+    output: 'export',
+    distDir: 'docs',
+    basePath: '/docs',
+    images: {
+        path: '/images',
+        loader: 'default',
+        unoptimized: true,
+    }
 };
 
 module.exports = nextConfig;
