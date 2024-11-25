@@ -4,6 +4,7 @@ const nextConfig = {
     output: 'export',
     distDir: 'docs',
     basePath: '/docs',
+    assetPrefix: "/AerDevSite/",
     images: {
         path: '/images',
         loader: 'default',
