@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    basePath: '/AerDevSite',
+    basePath: process.env.NODE_ENV === 'production' ? '/AerDevSite' : '',
     images: {
         path: '/images',
         loader: 'default',
