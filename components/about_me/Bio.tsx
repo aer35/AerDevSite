@@ -13,7 +13,7 @@ const Bio = () => {
                 G3</a>{`. Becoming a programmer just made sense because I love building things, identifying and solving complex problems, and learning. Every week 300,000 new Javascript frameworks are released and I learn them all. Haha just kidding.`}
             </Text>
             <Text className={styles.bioText}>
-                {`I cannot emphasize enough how much I love learning. There's an infinite amount of information in this world and while it's absolutely impossible for me to learn it all, I wouldn't be content with my life if I didn't at least try. To me there is no such thing as failure because all failures are learning opportunities. I am a big supporter of mob programming and pair programming because when you put two brains together you get more than twice the performance and the opportunity to grow. No matter who they may be or what they have done, I always look to learn from those around me.`}
+                {`I cannot emphasize enough how much I love learning. There's an infinite amount of information in this world and while it's  impossible for me to learn it all, I wouldn't be content if I didn't at least try. To me there is no such thing as failure, only learning opportunities. I am a big supporter of mob programming and pair programming because when you put two brains together you get more than twice the performance and the opportunity to grow. No matter who they may be or what they have done, I always look to learn from those around me.`}
             </Text>
         </Card>
     </Container>

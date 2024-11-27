@@ -12,11 +12,11 @@ const Home: NextPage = () => {
                 <title>Welcome!</title>
                 <meta name="darkreader-lock"/>
             </Head>
-            <Container style={{padding: "36px 0 20px 0"}}>
+            <Container style={{padding: "120px 0 90px 0"}}>
                 <AboutMe/>
-                <Spacer y={1.5}/>
+                <Spacer y={3}/>
                 <SocialLinks/>
-                <Spacer y={1.5}/>
+                <Spacer y={3}/>
                 <WorkExperience/>
             </Container>
         </>

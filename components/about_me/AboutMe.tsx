@@ -30,7 +30,7 @@ const AboutMe = () => {
                 </Text>
             }
             <Text h6>{formatDegree}</Text>
-            <Spacer/>
+            <Spacer y={2}/>
             <Bio/>
         </Container>
     );
