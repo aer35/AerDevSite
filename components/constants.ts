@@ -47,7 +47,14 @@ const constants = {
             end: "December 2023",
             notes: "Previous positions: Software Development Intern, Software Developer 1"
         }]
-    }]
+    }],
+    //projects[0] should always be the project you want displayed
+    projects: [{
+        name: "Jak Bot",
+        description: "A simple, low resource, self hostable discord bot for grabbing the top posts from your favorite Subreddit.",
+        link: "https://github.com/aer35/jak-bot",
+        imageSRC: "https://socialify.git.ci/aer35/jak-bot/image?font=Inter&language=1&name=1&owner=1&pattern=Brick+Wall&stargazers=1&theme=Auto",
+    }],
 }
 
 

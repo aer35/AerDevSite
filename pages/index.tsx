@@ -4,6 +4,7 @@ import Head from "next/head";
 import AboutMe from "../components/about_me/AboutMe";
 import SocialLinks from "../components/about_me/SocialLinks";
 import WorkExperience from "../components/work_experience/WorkExperience";
+import LatestProject from "../components/projects/LatestProject";
 
 const Home: NextPage = () => {
     return (
@@ -18,6 +19,8 @@ const Home: NextPage = () => {
                 <SocialLinks/>
                 <Spacer y={3}/>
                 <WorkExperience/>
+                <Spacer y={1.5}/>
+                <LatestProject/>
             </Container>
         </>
     );

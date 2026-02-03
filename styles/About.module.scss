@@ -73,3 +73,13 @@
     padding: 0;
   }
 }
+
+.LatestProject {
+  width: 80%;
+  display: flex;
+
+  .heading {
+    justify-content: center;
+    text-align: center;
+  }
+}
